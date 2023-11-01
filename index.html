@@ -47,7 +47,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12 bannerTxt">
-                    <h1 class="title bannerTitle cssanimation sequence leFadeInRight">
+                    <h1 class="title bannerTitle cssanimation sequence">
                         WP ONLINE
                     </h1>
                     <h1 class="dot">，，</h1>
@@ -315,39 +315,10 @@
     setTimeout(function () {
         $(".loadingAn").fadeOut('slow');
     }, 6000);
+    setTimeout(function(){
+        $(".banner h1.title").addClass("leFadeInRight");
+    },6100)
 </script>
-<script>
-    // $(document).ready(function () {
-    //     var $element = $('#page02');
-    //     var animationStarted = false;
 
-    //     // 滚动事件监听
-    //     $(window).scroll(function () {
-    //         var windowHeight = $(window).height();
-    //         var elementTop = $element.offset().top;
-    //         var scrollTop = $(window).scrollTop();
-
-    //         var distance = elementTop - scrollTop;
-
-    //         // 当元素进入视窗时开始执行动画
-    //         if (distance < windowHeight && !animationStarted) {
-    //             $('.number').each(function () {
-    //                 $(this).prop('Counter', 0).animate({
-    //                     Counter: $(this).text()
-    //                 }, {
-    //                     duration: 4000,
-    //                     easing: 'swing',
-    //                     step: function (now) {
-    //                         $(this).text(Math.ceil(now));
-    //                     }
-    //                 });
-    //             });
-    //             animationStarted = true; // 防止多次执行动画
-    //         } else {
-
-    //         }
-    //     });
-    // });
-</script>
 
 </html>
