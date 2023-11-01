@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47" height="48" viewBox="0 0 47 48">
+  <g id="icon" transform="translate(0.143 0.354)">
+    <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(-0.143 -0.354)" fill="none" stroke="#666" stroke-width="2" opacity="0.91">
+      <ellipse cx="23.5" cy="24" rx="23.5" ry="24" stroke="none"/>
+      <ellipse cx="23.5" cy="24" rx="22.5" ry="23" fill="none"/>
+    </g>
+    <path id="Icon_awesome-phone-alt" data-name="Icon awesome-phone-alt" d="M17.384,12.645,13.47,10.968a.839.839,0,0,0-.979.241l-1.734,2.118A12.955,12.955,0,0,1,4.565,7.134L6.683,5.4a.837.837,0,0,0,.241-.979L5.246.507A.844.844,0,0,0,4.285.022L.65.86A.839.839,0,0,0,0,1.678,16.215,16.215,0,0,0,16.217,17.895a.839.839,0,0,0,.818-.65l.839-3.635a.849.849,0,0,0-.49-.965Z" transform="translate(14.699 14.699)" fill="#666"/>
+  </g>
+</svg>

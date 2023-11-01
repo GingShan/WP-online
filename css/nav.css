@@ -1,0 +1,55 @@
+nav.menubar{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    padding: 0% 1.2%;
+    padding-top: 0.5%;
+    padding-bottom: 2%;
+    background: linear-gradient(to bottom, rgba(255,255,255,1),rgba(255,255,255,0) 90%);
+    z-index: 10;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all .5s;
+}
+
+.Sticky{
+    opacity: 1 !important;
+    transform: translateY(0px) !important;
+    transition: all .5s;
+}
+
+nav.menubar .logo{
+    width: 10%;
+    min-width: 80px;
+    padding-top: 15px;
+}
+
+.linkArea{
+    width: calc(100% - 29%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.linkArea .menulink .btn{
+    flex: 1;
+    min-width: 200px;
+    padding: 20px 0;
+    text-align: center;
+}
+a.contentBtn{
+    margin: 20px 0;
+    min-width: 180px;
+    background-color: #58BEB9;
+    border-radius: 100px;
+    color: #fff;
+    line-height: 1;
+}
+
+a.contentBtn:hover{
+    background-color: transparent;
+    border: 1px solid #58BEB9;
+    color: #58BEB9;
+}

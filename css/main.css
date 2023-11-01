@@ -1,0 +1,125 @@
+@import url('https://fonts.cdnfonts.com/css/futura-std-4');
+@import url('https://fonts.cdnfonts.com/css/kano');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    position: relative;
+}
+
+html,body{
+    width: 100%;
+    font-size: 1.12rem;
+    /* background-color: #999999; */
+    scroll-behavior: smooth;
+}
+
+body{
+    scroll-behavior: smooth;
+}
+
+h1.title{
+    font-family: 'Kano', sans-serif;
+    color: #1A7F82;
+}
+
+.content, .content span{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    color: #999999;
+}
+
+a{
+    text-decoration: none;
+}
+
+a span{
+    font-family: 'Kano', sans-serif;
+    color: #1A7F82;
+}
+
+ul,li,p,span{
+    margin: 0;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a.btn{
+    color: #999999;
+}
+
+a.btn:hover{
+    color: #58BEB9;
+}
+
+section{
+    width: 100%;
+    overflow: hidden;
+}
+
+.scrollBtn{
+    min-width: 110px;
+    text-align: center;
+    color: #1A7F82;
+    padding-bottom: 0.5%;
+    transition: all 1s ease-in-out;
+    letter-spacing: 2px;
+}
+
+.scrollBtn.active{
+    color: #fff;
+    transition: all 1s ease-in-out;
+}
+
+.scrollBtn:hover{
+    color: #1A7F82;
+}
+
+.scrollBtn::before{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 15%;
+    height: 2px;
+    background-color: rgba(88,190,185,.4);
+    transition: all 1s ease-in-out;
+}
+
+.scrollBtn::after{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    width: 80%;
+    height: 2px;
+    background-color: #37A8A6;
+    transition: all 1s ease-in-out;
+}
+
+.scrollBtn.active::before{
+    background-color: rgba(255,255,255,1);
+    transition: all 1s ease-in-out;
+}
+
+.scrollBtn.active::after{
+    background-color: rgba(255,255,255,1);
+    transition: all 1s ease-in-out;
+}
+
+.cssanimation span { display: inline-block }
+
+.leFadeInRight span { animation-name: leFadeInRight }
+@keyframes leFadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(60px);
+    }
+    to { opacity: 1 }
+}
