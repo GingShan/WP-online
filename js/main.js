@@ -49,6 +49,8 @@ $(function(){
                 $(".banner .dot").addClass("active");
                 $(".banner .contentOne").addClass("active");
                 $(".banner .contentTwo").addClass("active");
+                // $(".imgCard .mask").addClass("maskplay");
+                // $(".imgCard .img").removeClass("show");
                 setTimeout(() => {
                     $('.card1 .img').css('background-image', 'url(' + './images/img/p2-1.png' + ')');
                     $('.card2 .img').css('background-image', 'url(' + './images/img/p2-2.png' + ')');
@@ -409,6 +411,14 @@ $(function(){
                 $(".banner .dot").addClass("active");
                 $(".banner .contentOne").addClass("active");
                 $(".banner .contentTwo").addClass("active");
+                $(".imgCard .mask").removeClass("maskplay");
+                setTimeout(() => {
+                    $(".imgCard .mask").addClass("maskplay");
+                }, 1000);
+                $(".imgCard .img").removeClass("show");
+                setTimeout(() => {
+                    $(".imgCard .img").addClass("show");
+                }, 1500);
                 setTimeout(() => {
                     $('.card1 .img').css('background-image', 'url(' + './images/img/p2-1.png' + ')');
                     $('.card2 .img').css('background-image', 'url(' + './images/img/p2-2.png' + ')');
@@ -416,7 +426,7 @@ $(function(){
                     $('.card4 .img').css('background-image', 'url(' + './images/img/p2-4.png' + ')');
                     $('.card5 .img').css('background-image', 'url(' + './images/img/p2-5.png' + ')');
                     $('.card6 .img').css('background-image', 'url(' + './images/img/p2-6.png' + ')');
-                }, 500);
+                }, 1500);
             },
             pin: true,
             markers: false // 仅用于调试，显示触发器的位置
