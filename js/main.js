@@ -22,7 +22,7 @@ $(function () {
         });
     }, 6500); // 這裡的2000是延遲的時間，你可以根據需要調整
     setTimeout(() => {
-        $(".contentOne").css("opacity","1")
+        $(".contentOne").css("opacity", "1")
     }, 7000);
     setTimeout(() => {
         $(".imgCard .mask").addClass("maskplay");
@@ -34,11 +34,11 @@ $(function () {
     }, 8500);
 })
 
-$(function(){
+$(function () {
     let w = $(window).width();
-    if(w <= 1560 ){
+    if (w <= 1560) {
         gsap.registerPlugin(ScrollTrigger);
-        
+
         ScrollTrigger.create({
             trigger: ".banner", // 触发器的元素
             start: "6% top",
@@ -63,7 +63,7 @@ $(function(){
             pin: true,
             markers: false // 仅用于调试，显示触发器的位置
         });
-        
+
         ScrollTrigger.create({
             trigger: ".card3", // 触发器的元素
             start: "-180% top",
@@ -82,12 +82,21 @@ $(function(){
                 $(".scrollBtn").addClass("active");
             },
             onLeaveBack: function () {
-        
+                $(".card3").removeClass("fullSc");
+                $('.videoArea').css('opacity', '1');
+                $('.card3 .img').css('background-image', 'url(' + './images/img/p2-3.png' + ')');
+                $(".card1").removeClass("leave");
+                $(".card2").removeClass("leave");
+                $(".card4").removeClass("leave");
+                $(".card5").removeClass("leave");
+                $(".card6").removeClass("leave");
+                $('#bannerVideo').trigger('stop');
+                $(".scrollBtn").removeClass("active");
             },
             markers: false // 仅用于调试，显示触发器的位置
         });
-        
-        
+
+
         // 创建ScrollTrigger触发器对象
         ScrollTrigger.create({
             trigger: ".videoTxt", // 触发器的元素
@@ -99,10 +108,10 @@ $(function(){
             },
             markers: false // 仅用于调试，显示触发器的位置
         });
-        
+
         // 后续的代码中，添加类到目标元素（例如在某个事件或条件下）
         //   document.querySelector(".your-element").classList.add("active");
-        
+
         ScrollTrigger.create({
             trigger: "#page02", // 触发器的元素
             start: "13% top",
@@ -142,14 +151,14 @@ $(function(){
                     $("body").css("background-color", "#fff");
                     $(".page02").css("background-color", "#EEF3F4")
                 } else {
-        
+
                 }
             },
             pin: true,
             markers: false // 仅用于调试，显示触发器的位置
         });
-        
-        
+
+
         ScrollTrigger.create({
             trigger: ".pageBlock", // 触发器的元素
             start: "10% top",
@@ -185,7 +194,7 @@ $(function(){
                 var windowHeight = $(window).height();
                 var scrollTop = $(window).scrollTop();
                 var scrollPosition = windowHeight + scrollTop;
-        
+
                 // 当元素进入视窗时开始执行动画
                 if (scrollPosition > $("#page03").offset().top) {
                     $(".leftBox .imgBox").addClass("active");
@@ -195,7 +204,7 @@ $(function(){
                 }
             });
         });
-    }else if(w <= 1366){
+    } else if (w <= 1366) {
         $(function () {
             setTimeout(function () {
                 const bannerTxt = document.querySelectorAll('.bannerTitle span');
@@ -205,22 +214,22 @@ $(function(){
                 });
             }, 6500); // 這裡的2000是延遲的時間，你可以根據需要調整
             setTimeout(() => {
-                $(".contentOne").css("opacity","1")
+                $(".contentOne").css("opacity", "1")
             }, 7000);
             setTimeout(() => {
                 $(".imgCard .mask").addClass("maskplay");
             }, 7600);
             $(".imgCard .mask").removeClass("maskplay");
-        
+
             setTimeout(() => {
                 $(".imgCard .img").addClass("show");
             }, 8500);
         })
-        
-        
+
+
         gsap.registerPlugin(ScrollTrigger);
-        
-        
+
+
         ScrollTrigger.create({
             trigger: ".banner", // 触发器的元素
             start: "6% top",
@@ -243,7 +252,7 @@ $(function(){
             pin: true,
             markers: false // 仅用于调试，显示触发器的位置
         });
-        
+
         ScrollTrigger.create({
             trigger: ".card3", // 触发器的元素
             start: "-180% top",
@@ -262,12 +271,12 @@ $(function(){
                 $(".scrollBtn").addClass("active");
             },
             onLeaveBack: function () {
-        
+
             },
             markers: false // 仅用于调试，显示触发器的位置
         });
-        
-        
+
+
         // 创建ScrollTrigger触发器对象
         ScrollTrigger.create({
             trigger: ".videoTxt", // 触发器的元素
@@ -279,10 +288,10 @@ $(function(){
             },
             markers: false // 仅用于调试，显示触发器的位置
         });
-        
+
         // 后续的代码中，添加类到目标元素（例如在某个事件或条件下）
         //   document.querySelector(".your-element").classList.add("active");
-        
+
         ScrollTrigger.create({
             trigger: "#page02", // 触发器的元素
             start: "13% top",
@@ -322,14 +331,14 @@ $(function(){
                     $("body").css("background-color", "#fff");
                     $(".page02").css("background-color", "#EEF3F4")
                 } else {
-        
+
                 }
             },
             pin: true,
             markers: false // 仅用于调试，显示触发器的位置
         });
-        
-        
+
+
         ScrollTrigger.create({
             trigger: ".pageBlock", // 触发器的元素
             start: "10% top",
@@ -365,7 +374,7 @@ $(function(){
                 var windowHeight = $(window).height();
                 var scrollTop = $(window).scrollTop();
                 var scrollPosition = windowHeight + scrollTop;
-        
+
                 // 当元素进入视窗时开始执行动画
                 if (scrollPosition > $("#page03").offset().top) {
                     $(".leftBox .imgBox").addClass("active");
@@ -375,7 +384,7 @@ $(function(){
                 }
             });
         });
-    }else{
+    } else {
         $(function () {
             setTimeout(function () {
                 const bannerTxt = document.querySelectorAll('.bannerTitle span');
@@ -385,22 +394,22 @@ $(function(){
                 });
             }, 6500); // 這裡的2000是延遲的時間，你可以根據需要調整
             setTimeout(() => {
-                $(".contentOne").css("opacity","1")
+                $(".contentOne").css("opacity", "1")
             }, 7000);
             setTimeout(() => {
                 $(".imgCard .mask").addClass("maskplay");
             }, 7600);
             $(".imgCard .mask").removeClass("maskplay");
-        
+
             setTimeout(() => {
                 $(".imgCard .img").addClass("show");
             }, 8500);
         })
-        
-        
+
+
         gsap.registerPlugin(ScrollTrigger);
-        
-        
+
+
         ScrollTrigger.create({
             trigger: ".banner", // 触发器的元素
             start: "6% top",
@@ -431,7 +440,7 @@ $(function(){
             pin: true,
             markers: false // 仅用于调试，显示触发器的位置
         });
-        
+
         ScrollTrigger.create({
             trigger: ".card3", // 触发器的元素
             start: "-180% top",
@@ -450,12 +459,23 @@ $(function(){
                 $(".scrollBtn").addClass("active");
             },
             onLeaveBack: function () {
-        
+                $(".card3").removeClass("fullSc");
+                $('.videoArea').css('opacity', '0');
+                $('#bannerVideo').trigger('stop');
+                $('.card3 .img').css('background-image', 'url(' + './images/img/p2-3.png' + ')');
+                $(".scrollBtn").removeClass("active");
+                setTimeout(() => {
+                    $(".card1").removeClass("leave");
+                    $(".card2").removeClass("leave");
+                    $(".card4").removeClass("leave");
+                    $(".card5").removeClass("leave");
+                    $(".card6").removeClass("leave");
+                }, 500);
             },
             markers: false // 仅用于调试，显示触发器的位置
         });
-        
-        
+
+
         // 创建ScrollTrigger触发器对象
         ScrollTrigger.create({
             trigger: ".videoTxt", // 触发器的元素
@@ -467,10 +487,10 @@ $(function(){
             },
             markers: false // 仅用于调试，显示触发器的位置
         });
-        
+
         // 后续的代码中，添加类到目标元素（例如在某个事件或条件下）
         //   document.querySelector(".your-element").classList.add("active");
-        
+
         ScrollTrigger.create({
             trigger: "#page02", // 触发器的元素
             start: "13% top",
@@ -510,14 +530,14 @@ $(function(){
                     $("body").css("background-color", "#fff");
                     $(".page02").css("background-color", "#EEF3F4")
                 } else {
-        
+
                 }
             },
             pin: true,
             markers: false // 仅用于调试，显示触发器的位置
         });
-        
-        
+
+
         ScrollTrigger.create({
             trigger: ".pageBlock", // 触发器的元素
             start: "10% top",
@@ -554,7 +574,7 @@ $(function(){
                 var windowHeight = $(window).height();
                 var scrollTop = $(window).scrollTop();
                 var scrollPosition = windowHeight + scrollTop;
-        
+
                 // 当元素进入视窗时开始执行动画
                 if (scrollPosition > $("#page03").offset().top + 1000) {
                     $(".leftBox .imgBox").addClass("active");

@@ -400,6 +400,7 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background-color: rgba(0,0,0,.19);
 }
 
 .videoArea #bannerVideo {
@@ -446,6 +447,10 @@
     font-size: 9rem;
     letter-spacing: -7.7rem;
     line-height: 1;
+}
+
+.videoArea .videoTxt .content,.videoArea .videoTxt .content span{
+    color: #fff;
 }
 
 .scrollBtn {
