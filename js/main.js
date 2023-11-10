@@ -160,9 +160,9 @@ $(function(){
                 $(".page02 h1.title").addClass("active");
                 $(".page02 .content").addClass("active");
                 $(".page02 .numArea").addClass("active");
-                $(".earth img").attr("src", "../images/img/earth.png");
+                $(".earth img").attr("src", "./images/img/earth.png");
                 $(".plate").addClass("active");
-                $(".plate img").attr("src", "../images/img/plate02.svg");
+                $(".plate img").attr("src", "./images/img/plate02.svg");
                 $('.number').each(function () {
                     $(this).prop('Counter', 0).animate({
                         Counter: $(this).text()
@@ -340,9 +340,9 @@ $(function(){
                 $(".page02 h1.title").addClass("active");
                 $(".page02 .content").addClass("active");
                 $(".page02 .numArea").addClass("active");
-                $(".earth img").attr("src", "../images/img/earth.png");
+                $(".earth img").attr("src", "./images/img/earth.png");
                 $(".plate").addClass("active");
-                $(".plate img").attr("src", "../images/img/plate02.svg");
+                $(".plate img").attr("src", "./images/img/plate02.svg");
                 $('.number').each(function () {
                     $(this).prop('Counter', 0).animate({
                         Counter: $(this).text()
@@ -528,9 +528,9 @@ $(function(){
                 $(".page02 h1.title").addClass("active");
                 $(".page02 .content").addClass("active");
                 $(".page02 .numArea").addClass("active");
-                $(".earth img").attr("src", "../images/img/earth.png");
+                $(".earth img").attr("src", "./images/img/earth.png");
                 $(".plate").addClass("active");
-                $(".plate img").attr("src", "../images/img/plate02.svg");
+                $(".plate img").attr("src", "./images/img/plate02.svg");
                 $('.number').each(function () {
                     $(this).prop('Counter', 0).animate({
                         Counter: $(this).text()
