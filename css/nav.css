@@ -39,6 +39,11 @@ nav.menubar .logo{
     padding: 20px 0;
     text-align: center;
 }
+
+.linkArea .menulink .btn:active{
+    color: #58BEB9;
+}
+
 a.contentBtn{
     margin: 20px 0;
     min-width: 180px;
@@ -49,7 +54,6 @@ a.contentBtn{
 }
 
 a.contentBtn:hover{
-    background-color: transparent;
-    border: 1px solid #58BEB9;
-    color: #58BEB9;
+    background-color: #7FDBD6;
+    color: #fff;
 }

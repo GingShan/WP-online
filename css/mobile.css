@@ -1,0 +1,51 @@
+@media screen and (max-width:1560px) {
+
+    html,
+    body {
+        font-size: 1rem;
+    }
+
+    .linkArea {
+        width: calc(100% - 24%);
+    }
+
+    .bannerTxt h1.title,
+    .videoArea .videoTxt h1.title {
+        font-size: 7.15rem;
+    }
+}
+
+@media screen and (max-width:1366px) {
+
+    html,
+    body {
+        font-size: 0.95rem;
+    }
+
+    .linkArea {
+        width: calc(100% - 19%);
+    }
+
+    .bannerTxt h1.title,
+    .videoArea .videoTxt h1.title {
+        font-size: 6rem;
+    }
+
+    .page02 .content {
+        padding-bottom: 9%;
+    }
+
+    .page02 h1.title {
+        font-size: 6rem;
+        padding-bottom: 4%;
+    }
+
+    .sqrate01 {
+        width: 100px;
+    }
+
+    .sqrate03 {
+        width: 226px;
+        height: 178px;
+    }
+}

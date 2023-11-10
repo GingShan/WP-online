@@ -31,6 +31,10 @@ footer{
     color: #999;
 }
 
+.footerLink a:hover{
+    color: #7FDBD6;
+}
+
 .footerLink .link{
     display: flex;
     align-items: center;
@@ -61,4 +65,8 @@ footer{
 .copyright{
     text-align: center;
     padding: 1% 0%;
+}
+
+.copyright a:hover{
+    color: #7FDBD6 !important;
 }

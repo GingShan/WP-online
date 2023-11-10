@@ -30,7 +30,7 @@
 }
 
 .page01 .pageOneSwiper{
-    padding-top: 3%;
+    padding-top: 7%;
 }
 
 .page01 .pageOneSwiper .swiper-wrapper{
@@ -55,41 +55,6 @@
     padding-top: 10%;
 }
 
-.page02::before{
-    content: '';
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 10vh;
-    background: linear-gradient(to bottom, rgba(255,255,255,1),#EEF3F4);
-    transition: all 1s ease-in-out;
-}
-
-.page02::after{
-    content: '';
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    /* background: linear-gradient(to bottom, rgba(231,241,243,1), rgba(240,244,245,1)); */
-    background-color: #EEF3F4;
-    /* mix-blend-mode: screen; */
-    pointer-events: none;
-    z-index: -2;
-    transition: all 1s ease-in-out;
-}
-
-.page02.active::before{
-    background: linear-gradient(to bottom, rgba(255,255,255,1),#F0F4F5);
-}
-
-.page02.active::after{
-    background-color: #F0F4F5;
-}
-
-
 .page02 .pageBlock{
     width: 80%;
     margin: 0 auto;
@@ -106,9 +71,38 @@
 .page02 h1.title{
     color: #fff;
     font-size: 7rem;
-    letter-spacing: 10px;
+    letter-spacing: -26px;
     padding-bottom: 10%;
+    transition: all 1s ease-in-out;
 }
+
+.page02 h1.title span {
+    text-align: center;
+    opacity: 0;
+    left: 10%;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    letter-spacing: 0px;
+    animation-fill-mode: forwards;
+}
+
+@keyframes textShow {
+    from {
+        opacity: 0;
+        left: 10%;
+    }
+
+    to {
+        opacity: 1;
+        left: 0%;
+    }
+}
+
+/* .page02 h1.title.show{
+    opacity: 1;
+    transition: all 1s ease-in-out;
+} */
 
 /* .page02 h1.title p{
     display: inline;
@@ -123,8 +117,15 @@
     position: absolute;
     top: 55%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
     z-index: -1;
+    transition: all 1.5s ease-in-out;
+}
+
+.page02 .earth.show{
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
     transition: all 1.5s ease-in-out;
 }
 
@@ -141,6 +142,14 @@
     bottom: 5%;
     right: 14%;
     z-index: -1;
+    transform: scale(0.5);
+    opacity: 0;
+    transition: all 1.5s ease-in-out;
+}
+
+.page02 .plate.show{
+    transform: scale(1);
+    opacity: 1;
     transition: all 1.5s ease-in-out;
 }
 
@@ -154,6 +163,13 @@
 .sqrate{
     position: absolute;
     z-index: -1;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.sqrate.show{
+    opacity: 1;
+    transition: all 1s ease-in-out;
 }
 
 .sqrate01{
@@ -182,7 +198,7 @@
 }
 
 .page02 .content{
-    text-align: justify;
+    text-align: left;
     color: #58BEB9;
     padding-bottom: 15%;
     opacity: 0;
@@ -218,9 +234,10 @@
 }
 
 .page02 .numArea .number{
-    text-align: right;
+    text-align: left;
     color: #6CC4C2;
     font-size: 2.5rem;
+    padding-left: 10%;
 }
 
 .page02 .numArea .number::after{
@@ -256,7 +273,7 @@
 }
 
 .page03 .content{
-    text-align: justify;
+    text-align: left;
 }
 
 .page03 .top{

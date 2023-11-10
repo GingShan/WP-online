@@ -12,15 +12,21 @@
 html,body{
     width: 100%;
     font-size: 1.12rem;
-    /* background-color: #999999; */
+    background-color: #fff;
     scroll-behavior: smooth;
 }
 
 body{
     scroll-behavior: smooth;
+    transition: background-color 1s ease-in-out;
 }
 
 h1.title{
+    font-family: 'Kano', sans-serif;
+    color: #1A7F82;
+}
+
+.title{
     font-family: 'Kano', sans-serif;
     color: #1A7F82;
 }
@@ -53,7 +59,7 @@ a.btn{
 }
 
 a.btn:hover{
-    color: #58BEB9;
+    color: #7FDBD6;
 }
 
 section{
